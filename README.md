@@ -26,22 +26,6 @@ It was built as a lightweight, efficient project to demonstrate transfer learnin
 - **License:** MIT
 - **Finetuned from model:** `bert-base-uncased`
 
-## 🚀 How to Use
-
-You can use this model directly with a Hugging Face pipeline for inference:
-
-```python
-from transformers import pipeline
-
-# Load the model and tokenizer from the hub
-classifier = pipeline("text-classification", model="your-username/your-model-name")
-
-# Test a review
-review = "I absolutely loved this movie! The acting was incredible and the plot kept me hooked."
-print(classifier(review))
-# Output: [{'label': 'LABEL_1', 'score': 0.998}] (Note: LABEL_1 is Positive, LABEL_0 is Negative)
-```
-
 ## 📊 Dataset & Training Details
 - **Dataset:** IMDb Movie Reviews (25,000 training samples, 25,000 testing samples)
 - **Task:** Binary Sentiment Analysis (Classifying movie reviews into positive or negative sentiment).
