@@ -9,7 +9,7 @@ tags:
 datasets:
 - imdb
 metrics:
-- accuracy
+- f1-score
 pipeline_tag: text-classification
 ---
 
